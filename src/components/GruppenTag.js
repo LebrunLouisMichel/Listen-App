@@ -5,7 +5,7 @@ class GruppenTag extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      aufgeklappt: false
+      aufgeklappt: true
     }
   }
 
@@ -19,7 +19,6 @@ class GruppenTag extends React.Component {
   aufZuKlappen() {
     this.setState({aufgeklappt: !this.state.aufgeklappt})
   }
-  
 
   render() {
     const gruppe = this.props.gruppe
@@ -38,16 +37,17 @@ class GruppenTag extends React.Component {
     }
 
     let artikelArray = []
-    if (this.state.aufgeklappt) {
-      for (const artikel of gruppe.artikelListe) {
-        if (artikel.gekauft == this.props.gekauft) {
-          artikelArray.push(
-            <ArtikelTag artikel={artikel} key={artikel.id}
-                        checkHandler={this.props.checkHandler}
-                        deleteHandler={() => this.artikelEntfernen(artikel.name)}/>)
-        }
-      }
-    }
+   if (this.state.aufgeklappt) {
+     for (const artikel of gruppe.artikelListe) {
+       if (artikel.gekauft == this.props.gekauft) {
+         artikelArray.push(
+             <ArtikelTag artikel={artikel} key={artikel.id}
+                         checkHandler={this.props.checkHandler}
+                         deleteHandler={() => this.artikelEntfernen(artikel.name)}/>)
+       }
+     }
+   }
+
 
     return (
       <React.Fragment>
