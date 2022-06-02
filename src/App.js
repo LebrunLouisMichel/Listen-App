@@ -20,17 +20,14 @@ class App extends React.Component {
 
   initialisieren() {
     let montagDeutsch = Modell.gruppeHinzufuegen("Montag Deutsch")
-    let film1 = montagDeutsch.artikelHinzufuegen("Der Dunkle Kristall")
-    montagDeutsch.artikelHinzufuegen("Die Barbaren")
-    montagDeutsch.artikelHinzufuegen("Der Herr der Ringe")
+    let film1 = montagDeutsch.artikelHinzufuegen("Schreibübung 1")
+    montagDeutsch.artikelHinzufuegen("Hexentext lesen")
     let montagMathe = Modell.gruppeHinzufuegen("Montag Mathe")
-    let film2 = montagMathe.artikelHinzufuegen("Alita - Battle Angel")
-    montagMathe.artikelHinzufuegen("Mad Max - Fury Road")
-    montagMathe.artikelHinzufuegen("Avatar")
+    let film2 = montagMathe.artikelHinzufuegen("+ und -")
+    montagMathe.artikelHinzufuegen("Zahlen Suchspiel")
     let dienstagDeutsch = Modell.gruppeHinzufuegen("Dienstag Deutsch")
-    dienstagDeutsch.artikelHinzufuegen("Die Kabale")
-    dienstagDeutsch.artikelHinzufuegen("Endgame - Blaupause für die Globale Versklavung")
-    dienstagDeutsch.artikelHinzufuegen("Die Wüste lebt")
+    dienstagDeutsch.artikelHinzufuegen("Schreibübung 2")
+    dienstagDeutsch.artikelHinzufuegen("Hexentext lesen")
     let dienstagMathe = Modell.gruppeHinzufuegen("Dienstag Mathe")
     let mittwochDeutsch = Modell.gruppeHinzufuegen("Mittwoch Deutsch")
     let mittwochMathe = Modell.gruppeHinzufuegen("Mittwoch Mathe")
@@ -58,7 +55,7 @@ class App extends React.Component {
 
   artikelHinzufuegen() {
     // ToDo: implementiere diese Methode
-    const eingabe = document.getElementById("artikelEingabe")
+    const eingabe = document.getElementById("Aufgabe hinzufügen")
     const artikelName = eingabe.value.trim()
     if (artikelName.length > 0) {
       Modell.aktiveGruppe.artikelHinzufuegen(artikelName)
@@ -122,7 +119,8 @@ class App extends React.Component {
     return (
       <div id="container">
         <header>
-          <h1>Watchlist</h1>
+          <h1>LERNILAND</h1>
+          <h3>Klasse 1C</h3>
           <label
             className="mdc-text-field mdc-text-field--filled mdc-text-field--with-trailing-icon mdc-text-field--no-label">
             <span className="mdc-text-field__ripple"></span>
@@ -140,7 +138,7 @@ class App extends React.Component {
 
         <main>
           <section>
-            <h2>Noch zu kaufen
+            <h2>AUFGABEN
               <i onClick={() => this.einkaufenAufZuKlappen()} className="material-icons">
                 {this.state.einkaufenAufgeklappt ? 'expand_more' : 'expand_less'}
               </i>
@@ -151,7 +149,7 @@ class App extends React.Component {
           </section>
           <hr/>
           <section>
-            <h2>Schon gekauft
+            <h2>ERFÜLLT
               <i onClick={() => this.erledigtAufZuKlappen()} className="material-icons">
                 {this.state.erledigtAufgeklappt ? 'expand_more' : 'expand_less'}
               </i>
