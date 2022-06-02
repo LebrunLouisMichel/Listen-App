@@ -1,9 +1,10 @@
 #root {
     width: 23rem;
-    background-image: url("../img/Food2.jpeg");
+    background-image: url("../img/ninja2.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: inherit;
+    background-color: yellow;
 }
 
 #container {
