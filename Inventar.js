@@ -28,7 +28,7 @@ class Filmliste {
     }
 }
 
-class Film {
+class Aufgabe {
     constructor(titel, spieldauer, genre, erscheinung, fsk, specialEdition) {
         this.titel = titel
         this.spieldauer = spieldauer
@@ -41,10 +41,10 @@ class Film {
 
 }
 
-let film1 = new Film("Avatar", 162, "Sci-Fi", 2009, 12, true)
-let film2 = new Film("Dune", 155, "Sci-Fi", 2001, 12, false)
-let film3 = new Film("Enemy at the Gates", 130, "Drama", 2001, 16, false)
-let film4 = new Film("Iron Man", 126, "Action", 2008, 12, true)
+let film1 = new Aufgabe("Avatar", 162, "Sci-Fi", 2009, 12, true)
+let film2 = new Aufgabe("Dune", 155, "Sci-Fi", 2001, 12, false)
+let film3 = new Aufgabe("Enemy at the Gates", 130, "Drama", 2001, 16, false)
+let film4 = new Aufgabe("Iron Man", 126, "Action", 2008, 12, true)
 
 let sciFiListe = new Filmliste("Science-Fiction")
 let sciFiArray = [film1, film2]

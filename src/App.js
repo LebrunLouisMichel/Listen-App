@@ -19,18 +19,25 @@ class App extends React.Component {
   }
 
   initialisieren() {
-    let fantasy = Modell.gruppeHinzufuegen("Fantasy")
-    let film1 = fantasy.artikelHinzufuegen("Der Dunkle Kristall")
-    fantasy.artikelHinzufuegen("Die Barbaren")
-    fantasy.artikelHinzufuegen("Der Herr der Ringe")
-    let scifi = Modell.gruppeHinzufuegen("Science Fiction")
-    let film2 = scifi.artikelHinzufuegen("Alita - Battle Angel")
-    scifi.artikelHinzufuegen("Mad Max - Fury Road")
-    scifi.artikelHinzufuegen("Avatar")
-    let dokus = Modell.gruppeHinzufuegen("Dokumentationen")
-    dokus.artikelHinzufuegen("Die Kabale")
-    dokus.artikelHinzufuegen("Endgame - Blaupause für die Globale Versklavung")
-    dokus.artikelHinzufuegen("Die Wüste lebt")
+    let montagDeutsch = Modell.gruppeHinzufuegen("Montag Deutsch")
+    let film1 = montagDeutsch.artikelHinzufuegen("Der Dunkle Kristall")
+    montagDeutsch.artikelHinzufuegen("Die Barbaren")
+    montagDeutsch.artikelHinzufuegen("Der Herr der Ringe")
+    let montagMathe = Modell.gruppeHinzufuegen("Montag Mathe")
+    let film2 = montagMathe.artikelHinzufuegen("Alita - Battle Angel")
+    montagMathe.artikelHinzufuegen("Mad Max - Fury Road")
+    montagMathe.artikelHinzufuegen("Avatar")
+    let dienstagDeutsch = Modell.gruppeHinzufuegen("Dienstag Deutsch")
+    dienstagDeutsch.artikelHinzufuegen("Die Kabale")
+    dienstagDeutsch.artikelHinzufuegen("Endgame - Blaupause für die Globale Versklavung")
+    dienstagDeutsch.artikelHinzufuegen("Die Wüste lebt")
+    let dienstagMathe = Modell.gruppeHinzufuegen("Dienstag Mathe")
+    let mittwochDeutsch = Modell.gruppeHinzufuegen("Mittwoch Deutsch")
+    let mittwochMathe = Modell.gruppeHinzufuegen("Mittwoch Mathe")
+    let donnerstagDeutsch = Modell.gruppeHinzufuegen("Donnerstag Deutsch")
+    let donnerstagMathe = Modell.gruppeHinzufuegen("Donnerstag Mathe")
+    let freitagDeutsch = Modell.gruppeHinzufuegen("Freitag Deutsch")
+    let freitagMathe = Modell.gruppeHinzufuegen("Freitag Mathe")
   }
 
   einkaufenAufZuKlappen() {
