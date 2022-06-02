@@ -10,6 +10,7 @@ import Modell from "./Shopping.js"
  * @property {String}    name         - Name der Gruppe
  * @property {Artikel[]} artikelListe - Liste der Artikel in dieser Gruppe
  */
+
 class Gruppe {
   static counter = 1
   id = Gruppe.counter++

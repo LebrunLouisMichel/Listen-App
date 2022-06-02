@@ -18,6 +18,7 @@ class Shopping {
   }
   sortierung = Object.keys(this.SORTIERUNGEN)[0]
 
+
   /**
    * Sucht eine Gruppe nach ihrem Namen und liefert sie als Objekt zurück
    * @param {String} suchName - Name der gesuchten Gruppe

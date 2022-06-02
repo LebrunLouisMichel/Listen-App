@@ -23,16 +23,17 @@ dt {
 }
 
 h1 {
-    color: black;
-    -webkit-text-stroke: thin greenyellow;
+    color: greenyellow;
+    -webkit-text-stroke: thin black;
     font-style: italic;
     text-shadow: 5px 5px 5px darkblue;
 }
 
 h3{
-    color: black;
+    color: greenyellow;
+    -webkit-text-stroke: thin black;
     font-style: italic;
-    text-shadow: 5px 5px 5px darkblue;
+    text-shadow: 5px 5px 5px black;
 
 }
 

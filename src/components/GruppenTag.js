@@ -5,7 +5,7 @@ class GruppenTag extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      aufgeklappt: true
+      aufgeklappt: false
     }
   }
 
@@ -19,6 +19,7 @@ class GruppenTag extends React.Component {
   aufZuKlappen() {
     this.setState({aufgeklappt: !this.state.aufgeklappt})
   }
+  
 
   render() {
     const gruppe = this.props.gruppe
